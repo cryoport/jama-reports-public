@@ -1,5 +1,9 @@
+body {
+    font-family: "Proxima Nova", serif;
+}
+
 .document_title {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 36pt;
     padding-bottom: 25px;
 }
@@ -18,6 +22,7 @@
 }
 
 h1 {
+    font-weight: 900;
     font-size: 18pt;
     padding-bottom: 12pt;
     line-height: 1.15;
@@ -31,4 +36,9 @@ h2 {
 
 h3 {
     font-size: 12pt;
+}
+
+p {
+    font-size: 10pt;
+    font-family: "Proxima Nova Rg";
 }

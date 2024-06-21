@@ -1,11 +1,43 @@
-.document_title{
-	font-weight: bold;
-	font-size: 36px;
-	padding-bottom: 25px;
+body {
+    font-family: "Proxima Nova", serif;
 }
-.document_subtitle{
-	font-size: 16px;
+
+.document_title {
+    font-weight: 900;
+    font-size: 36pt;
+    padding-bottom: 25px;
 }
-.document_author{
-	font-size: 10px;
+
+.document_subtitle {
+    font-size: 16pt;
+}
+
+.document_author {
+    font-size: 10pt;
+}
+
+.page_break {
+    mso-special-character: line-break;
+    page-break-before: always;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 18pt;
+    padding-bottom: 12pt;
+    line-height: 1.15;
+}
+
+h2 {
+    font-size: 14pt;
+    padding-top: 12pt;
+    padding-bottom: 6pt;
+}
+
+h3 {
+    font-size: 12pt;
+}
+
+p {
+    font-size: 10pt;
 }

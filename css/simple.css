@@ -39,7 +39,8 @@ h1 {
     font-size: 18pt;
     padding-bottom: 12pt;
     line-height: 1.15;
-    color: #121853
+    color: #121853;
+    break-after: avoid;
 }
 
 h2 {
@@ -48,12 +49,14 @@ h2 {
     padding-bottom: 6pt;
     line-height: 1.15;
     color: #4F4F4F;
+    break-after: avoid;
 }
 
 h3 {
     font-size: 12pt;
     color: #747474;
     line-height: 1.25;
+    break-after: avoid;
 }
 
 p {

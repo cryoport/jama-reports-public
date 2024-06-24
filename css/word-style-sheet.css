@@ -7,397 +7,470 @@
 */
 
 /* Font Definitions */
-@font-face
-{font-family:Wingdings;
-    panose-1:5 0 0 0 0 0 0 0 0 0;
-    mso-font-charset:77;
-    mso-generic-font-family:decorative;
-    mso-font-pitch:variable;
-    mso-font-signature:3 268435456 0 0 -2147483647 0;}
-@font-face
-{font-family:"Cambria Math";
-    panose-1:2 4 5 3 5 4 6 3 2 4;
-    mso-font-charset:0;
-    mso-generic-font-family:roman;
-    mso-font-pitch:variable;
-    mso-font-signature:-536870145 1107305727 0 0 415 0;}
-@font-face
-{font-family:"Calibri";
-    panose-1:2 15 5 2 2 2 4 3 2 4;
-    mso-font-charset:0;
-    mso-generic-font-family:swiss;
-    mso-font-pitch:variable;
-    mso-font-signature:-1610611985 1073750139 0 0 159 0;}
-@font-face
-{font-family:"Times New Roman \(Body CS\)";
-    panose-1:2 11 6 4 2 2 2 2 2 4;
-    mso-font-alt:"Times New Roman";
-    mso-font-charset:0;
-    mso-generic-font-family:roman;
-    mso-font-pitch:auto;
-    mso-font-signature:0 0 0 0 0 0;}
-@font-face
-{font-family:"Helvetica Neue";
-    panose-1:2 0 5 3 0 0 0 2 0 4;
-    mso-font-charset:0;
-    mso-generic-font-family:auto;
-    mso-font-pitch:variable;
-    mso-font-signature:-452984065 1342208475 16 0 1 0;}
-@font-face
-{font-family:Times;
-    panose-1:0 0 5 0 0 0 0 2 0 0;
-    mso-font-charset:0;
-    mso-generic-font-family:auto;
-    mso-font-pitch:variable;
-    mso-font-signature:-536870145 1342185562 0 0 415 0;}
+@font-face {
+    font-family: Wingdings;
+    panose-1: 5 0 0 0 0 0 0 0 0 0;
+    mso-font-charset: 77;
+    mso-generic-font-family: decorative;
+    mso-font-pitch: variable;
+    mso-font-signature: 3 268435456 0 0 -2147483647 0;
+}
+
+@font-face {
+    font-family: "Cambria Math";
+    panose-1: 2 4 5 3 5 4 6 3 2 4;
+    mso-font-charset: 0;
+    mso-generic-font-family: roman;
+    mso-font-pitch: variable;
+    mso-font-signature: -536870145 1107305727 0 0 415 0;
+}
+
+@font-face {
+    font-family: "Calibri";
+    panose-1: 2 15 5 2 2 2 4 3 2 4;
+    mso-font-charset: 0;
+    mso-generic-font-family: swiss;
+    mso-font-pitch: variable;
+    mso-font-signature: -1610611985 1073750139 0 0 159 0;
+}
+
+@font-face {
+    font-family: "Times New Roman \(Body CS\)";
+    panose-1: 2 11 6 4 2 2 2 2 2 4;
+    mso-font-alt: "Times New Roman";
+    mso-font-charset: 0;
+    mso-generic-font-family: roman;
+    mso-font-pitch: auto;
+    mso-font-signature: 0 0 0 0 0 0;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    panose-1: 2 0 5 3 0 0 0 2 0 4;
+    mso-font-charset: 0;
+    mso-generic-font-family: auto;
+    mso-font-pitch: variable;
+    mso-font-signature: -452984065 1342208475 16 0 1 0;
+}
+
+@font-face {
+    font-family: Times;
+    panose-1: 0 0 5 0 0 0 0 2 0 0;
+    mso-font-charset: 0;
+    mso-generic-font-family: auto;
+    mso-font-pitch: variable;
+    mso-font-signature: -536870145 1342185562 0 0 415 0;
+}
 
 /* Set the global font family and base font-size */
 
-body {
-    font-family:"${primaryFont}",sans-serif;
-    font-size:${primaryFontSize};}
-
 /* Style Definitions */
-p.MsoNormal, li.MsoNormal, div.MsoNormal
-{mso-style-unhide:no;
-    mso-style-qformat:yes;
-    mso-style-parent:"";
-    margin:3pt 0pt 3pt 0pt;
-    mso-pagination:widow-orphan;
-    font-family:"${primaryFont}",sans-serif;
-    font-size:10.0pt;}
-p.error
-{mso-style-unhide:no;
-    mso-style-qformat:yes;
-    mso-style-parent:"";
-    margin:0pt;
-    mso-pagination:widow-orphan;
-    color:red;}
-h1
-{mso-style-priority:9;
-    mso-style-unhide:no;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    margin:12pt 0pt 3pt .3in;
-    text-indent:-.3in;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:1;
-    mso-list:l0 level1 lfo1;
-    font-size:14.0pt;
-    color:#2F5496;
-    mso-font-kerning:0pt;
-    font-weight:normal;}
-h2
-{mso-style-priority:9;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    margin:6pt 0pt 3pt .4in;
-    text-indent:-.4in;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:2;
-    mso-list:l0 level2 lfo1;
-    font-size:13.0pt;
-    color:#2F5496;
-    font-weight:normal;}
-h3
-{mso-style-priority:9;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    margin:6pt 0pt 3pt .5in;
-    text-indent:-.5in;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:3;
-    mso-list:l0 level3 lfo1;
-    font-size:12.0pt;
-    color:#1F3763;
-    font-weight:normal;}
-h4
-{mso-style-priority:9;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    margin:6pt 0pt 3pt .6in;
-    text-indent:-.6in;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:4;
-    mso-list:l0 level4 lfo1;
-    font-size:11.0pt;
-    color:#2F5496;
-    font-weight:normal;
-    font-style:italic;}
-h5
-{mso-style-priority:9;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    margin:6pt 0pt 3pt .7in;
-    text-indent:-.7in;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:5;
-    mso-list:l0 level5 lfo1;
-    font-size:10.0pt;
-    color:#2F5496;
-    font-weight:normal;}
-h6
-{mso-style-priority:9;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    margin:6pt 0pt 3pt .8in;
-    text-indent:-.8in;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:6;
-    mso-list:l0 level6 lfo1;
-    font-size:10.0pt;
-    color:#1F3763;
-    font-weight:normal;}
+p.MsoNormal, li.MsoNormal, div.MsoNormal {
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    mso-style-parent: "";
+    margin: 3pt 0pt 3pt 0pt;
+    mso-pagination: widow-orphan;
+    font-size: 10.0pt;
+}
+
+p.error {
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    mso-style-parent: "";
+    margin: 0pt;
+    mso-pagination: widow-orphan;
+    color: red;
+}
+
+h1 {
+    mso-style-priority: 9;
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    margin: 12pt 0pt 3pt .3in;
+    text-indent: -.3in;
+    mso-pagination: widow-orphan lines-together;
+    page-break-after: avoid;
+    mso-outline-level: 1;
+    mso-list: l0 level1 lfo1;
+    font-size: 14.0pt;
+    color: #2F5496;
+    mso-font-kerning: 0pt;
+    font-weight: normal;
+}
+
+h2 {
+    mso-style-priority: 9;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    margin: 6pt 0pt 3pt .4in;
+    text-indent: -.4in;
+    mso-pagination: widow-orphan lines-together;
+    page-break-after: avoid;
+    mso-outline-level: 2;
+    mso-list: l0 level2 lfo1;
+    font-size: 13.0pt;
+    color: #2F5496;
+    font-weight: normal;
+}
+
+h3 {
+    mso-style-priority: 9;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    margin: 6pt 0pt 3pt .5in;
+    text-indent: -.5in;
+    mso-pagination: widow-orphan lines-together;
+    page-break-after: avoid;
+    mso-outline-level: 3;
+    mso-list: l0 level3 lfo1;
+    font-size: 12.0pt;
+    color: #1F3763;
+    font-weight: normal;
+}
+
+h4 {
+    mso-style-priority: 9;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    margin: 6pt 0pt 3pt .6in;
+    text-indent: -.6in;
+    mso-pagination: widow-orphan lines-together;
+    page-break-after: avoid;
+    mso-outline-level: 4;
+    mso-list: l0 level4 lfo1;
+    font-size: 11.0pt;
+    color: #2F5496;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h5 {
+    mso-style-priority: 9;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    margin: 6pt 0pt 3pt .7in;
+    text-indent: -.7in;
+    mso-pagination: widow-orphan lines-together;
+    page-break-after: avoid;
+    mso-outline-level: 5;
+    mso-list: l0 level5 lfo1;
+    font-size: 10.0pt;
+    color: #2F5496;
+    font-weight: normal;
+}
+
+h6 {
+    mso-style-priority: 9;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    margin: 6pt 0pt 3pt .8in;
+    text-indent: -.8in;
+    mso-pagination: widow-orphan lines-together;
+    page-break-after: avoid;
+    mso-outline-level: 6;
+    mso-list: l0 level6 lfo1;
+    font-size: 10.0pt;
+    color: #1F3763;
+    font-weight: normal;
+}
+
 /*tables of... leaders ->blank,dashed,dotted,heavy,lined,middot */
 span {
-    .mso-tab-count:blank !important;
-}
-p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
-{mso-style-priority:9;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    margin:6pt 0pt 3pt .8in;
-    text-indent:-.8in;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:7;
-    mso-list:l0 level7 lfo1;
-    font-size:10.0pt;
-    color:#1F3763;
-    font-weight:normal;}
-p.MsoToc1, li.MsoToc1, div.MsoToc1
-{mso-style-update:auto;
-    mso-style-priority:39;
-    mso-style-next:Normal;
-    margin:6pt 0pt 0pt 0pt;
-    mso-pagination:widow-orphan;
-    font-family:"Arial",sans-serif;
-    font-size:12.0pt;
-    font-weight:bold;
-    font-style:italic;}
-p.MsoToc2, li.MsoToc2, div.MsoToc2
-{mso-style-update:auto;
-    mso-style-priority:39;
-    mso-style-next:Normal;
-    margin:6pt 0pt 0pt 11pt;
-    mso-pagination:widow-orphan;
-    font-family:"Arial",sans-serif;
-    font-size:11.0pt;
-    font-weight:bold;}
-p.MsoToc3, li.MsoToc3, div.MsoToc3
-{mso-style-update:auto;
-    mso-style-priority:39;
-    mso-style-next:Normal;
-    margin:3pt 0pt 0pt 22pt;
-    font-family:"Arial",sans-serif;
-    mso-pagination:widow-orphan;
-    font-size:10.0pt;}
-p.MsoToc4, li.MsoToc4, div.MsoToc4
-{mso-style-update:auto;
-    mso-style-noshow:yes;
-    mso-style-priority:39;
-    mso-style-next:Normal;
-    margin:3pt 0pt 0pt 33pt;
-    mso-pagination:widow-orphan;
-    font-family:"Arial",sans-serif;
-    font-size:10.0pt;}
-p.MsoToc5, li.MsoToc5, div.MsoToc5
-{mso-style-update:auto;
-    mso-style-noshow:yes;
-    mso-style-priority:39;
-    mso-style-next:Normal;
-    margin:3pt 0pt 0pt 44pt;
-    mso-pagination:widow-orphan;
-    font-family:"Arial",sans-serif;
-    font-size:10.0pt;}
-p.MsoToc6, li.MsoToc6, div.MsoToc6
-{mso-style-update:auto;
-    mso-style-noshow:yes;
-    mso-style-priority:39;
-    mso-style-next:Normal;
-    margin:3pt 0pt 0pt 55pt;
-    mso-pagination:widow-orphan;
-    font-family:"Arial",sans-serif;
-    font-size:10.0pt;}
-p.MsoToc7, li.MsoToc7, div.MsoToc7
-{mso-style-update:auto;
-    mso-style-noshow:yes;
-    mso-style-priority:39;
-    mso-style-next:Normal;
-    margin:3pt 0pt 0pt 66pt;
-    mso-pagination:widow-orphan;
-    font-family:"Arial",sans-serif;
-    font-size:10.0pt;}
-p.MsoHeader, li.MsoHeader, div.MsoHeader
-{mso-style-priority:99;
-    mso-style-qformat:yes;
-    margin:0pt;
-    mso-pagination:widow-orphan;
-    tab-stops:center 3.25in right 6.5in;
-    font-size:10.0pt;}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-{mso-style-priority:99;
-    mso-style-qformat:yes;
-    margin:0pt;
-    mso-pagination:widow-orphan;
-    tab-stops:center 3.25in right 6.5in;
-    font-size:10.0pt;}
+    .mso-tab-count:blank
 
-p.MsoCaption, li.MsoCaption, div.MsoCaption,span.MsoCaption
-{font-size:9.0pt !important;
-    color:#44546A !important;
-    font-style:italic !important;
-    font-family:'Helvetica',sans-serif !important;
-    page-break-inside:avoid !important;
-    /*  font-weight:bold;*/
-    margin:0;
+!important;
 }
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-{mso-style-priority:10;
-    mso-style-unhide:no;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    margin:0pt;
-    line-height:normal;
-    mso-add-space:auto;
-    mso-pagination:widow-orphan;
-    font-size:40.0pt;
-    color:#4F81BD;}
-p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
-{mso-style-priority:11;
-    mso-style-unhide:no;
-    mso-style-qformat:yes;
-    mso-style-next:Normal;
-    line-height:normal;
-    margin:0pt 0pt 3pt 0pt;
-    mso-pagination:widow-orphan;
-    font-size:12.0pt;}
-a:link, span.MsoHyperlink
-{mso-style-priority:99;
-    color:#0563C1;
-    mso-themecolor:hyperlink;
-    text-decoration:underline;
-    text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-{mso-style-noshow:yes;
-    mso-style-priority:99;
-    color:#954F72;
-    mso-themecolor:followedhyperlink;
-    text-decoration:underline;
-    text-underline:single;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-{mso-style-priority:34;
-    mso-style-unhide:no;
-    mso-style-qformat:yes;
-    margin:0pt;
-    mso-add-space:auto;
-    mso-pagination:widow-orphan;
-    font-size:"${primaryFontSize}";}
-p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
-{mso-style-priority:39;
-    mso-style-qformat:yes;
-    mso-style-parent:"Heading 1";
-    mso-style-next:Normal;
-    margin:0pt;
-    text-align:center;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    font-size:16.0pt;}
-p.TableHeader, li.TableHeader, div.TableHeader
-{mso-style-name:"Table Header";
-    mso-style-unhide:no;
-    mso-style-qformat:yes;
-    margin:0pt;
-    mso-pagination:widow-orphan;
-    font-size:"${primaryFontSize}";
-    font-weight:bold;}
-p.TableCell, li.TableCell, div.TableCell
-{mso-style-name:"Table Cell";
-    mso-style-unhide:no;
-    mso-style-qformat:yes;
-    margin:0pt;
-    mso-pagination:widow-orphan;
-    font-size:${tableCellFontSize};}
-ol
-{margin:0pt;}
-ul
-{margin:0pt;}
-li
-{margin:0pt;}
+
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7 {
+    mso-style-priority: 9;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    margin: 6pt 0pt 3pt .8in;
+    text-indent: -.8in;
+    mso-pagination: widow-orphan lines-together;
+    page-break-after: avoid;
+    mso-outline-level: 7;
+    mso-list: l0 level7 lfo1;
+    font-size: 10.0pt;
+    color: #1F3763;
+    font-weight: normal;
+}
+
+p.MsoToc1, li.MsoToc1, div.MsoToc1 {
+    mso-style-update: auto;
+    mso-style-priority: 39;
+    mso-style-next: Normal;
+    margin: 6pt 0pt 0pt 0pt;
+    mso-pagination: widow-orphan;
+    font-family: "Arial", sans-serif;
+    font-size: 12.0pt;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p.MsoToc2, li.MsoToc2, div.MsoToc2 {
+    mso-style-update: auto;
+    mso-style-priority: 39;
+    mso-style-next: Normal;
+    margin: 6pt 0pt 0pt 11pt;
+    mso-pagination: widow-orphan;
+    font-family: "Arial", sans-serif;
+    font-size: 11.0pt;
+    font-weight: bold;
+}
+
+p.MsoToc3, li.MsoToc3, div.MsoToc3 {
+    mso-style-update: auto;
+    mso-style-priority: 39;
+    mso-style-next: Normal;
+    margin: 3pt 0pt 0pt 22pt;
+    font-family: "Arial", sans-serif;
+    mso-pagination: widow-orphan;
+    font-size: 10.0pt;
+}
+
+p.MsoToc4, li.MsoToc4, div.MsoToc4 {
+    mso-style-update: auto;
+    mso-style-noshow: yes;
+    mso-style-priority: 39;
+    mso-style-next: Normal;
+    margin: 3pt 0pt 0pt 33pt;
+    mso-pagination: widow-orphan;
+    font-family: "Arial", sans-serif;
+    font-size: 10.0pt;
+}
+
+p.MsoToc5, li.MsoToc5, div.MsoToc5 {
+    mso-style-update: auto;
+    mso-style-noshow: yes;
+    mso-style-priority: 39;
+    mso-style-next: Normal;
+    margin: 3pt 0pt 0pt 44pt;
+    mso-pagination: widow-orphan;
+    font-family: "Arial", sans-serif;
+    font-size: 10.0pt;
+}
+
+p.MsoToc6, li.MsoToc6, div.MsoToc6 {
+    mso-style-update: auto;
+    mso-style-noshow: yes;
+    mso-style-priority: 39;
+    mso-style-next: Normal;
+    margin: 3pt 0pt 0pt 55pt;
+    mso-pagination: widow-orphan;
+    font-family: "Arial", sans-serif;
+    font-size: 10.0pt;
+}
+
+p.MsoToc7, li.MsoToc7, div.MsoToc7 {
+    mso-style-update: auto;
+    mso-style-noshow: yes;
+    mso-style-priority: 39;
+    mso-style-next: Normal;
+    margin: 3pt 0pt 0pt 66pt;
+    mso-pagination: widow-orphan;
+    font-family: "Arial", sans-serif;
+    font-size: 10.0pt;
+}
+
+p.MsoHeader, li.MsoHeader, div.MsoHeader {
+    mso-style-priority: 99;
+    mso-style-qformat: yes;
+    margin: 0pt;
+    mso-pagination: widow-orphan;
+    tab-stops: center 3.25in right 6.5in;
+    font-size: 10.0pt;
+}
+
+p.MsoFooter, li.MsoFooter, div.MsoFooter {
+    mso-style-priority: 99;
+    mso-style-qformat: yes;
+    margin: 0pt;
+    mso-pagination: widow-orphan;
+    tab-stops: center 3.25in right 6.5in;
+    font-size: 10.0pt;
+}
+
+p.MsoCaption, li.MsoCaption, div.MsoCaption, span.MsoCaption {
+    font-size: 9.0pt !important;
+    color: #44546A !important;
+    font-style: italic !important;
+    font-family: 'Helvetica', sans-serif !important;
+    page-break-inside: avoid !important;
+    /*  font-weight:bold;*/
+    margin: 0;
+}
+
+p.MsoTitle, li.MsoTitle, div.MsoTitle {
+    mso-style-priority: 10;
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    margin: 0pt;
+    line-height: normal;
+    mso-add-space: auto;
+    mso-pagination: widow-orphan;
+    font-size: 40.0pt;
+    color: #4F81BD;
+}
+
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle {
+    mso-style-priority: 11;
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    mso-style-next: Normal;
+    line-height: normal;
+    margin: 0pt 0pt 3pt 0pt;
+    mso-pagination: widow-orphan;
+    font-size: 12.0pt;
+}
+
+a:link, span.MsoHyperlink {
+    mso-style-priority: 99;
+    color: #0563C1;
+    mso-themecolor: hyperlink;
+    text-decoration: underline;
+    text-underline: single;
+}
+
+a:visited, span.MsoHyperlinkFollowed {
+    mso-style-noshow: yes;
+    mso-style-priority: 99;
+    color: #954F72;
+    mso-themecolor: followedhyperlink;
+    text-decoration: underline;
+    text-underline: single;
+}
+
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+    mso-style-priority: 34;
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    margin: 0pt;
+    mso-add-space: auto;
+    mso-pagination: widow-orphan;
+}
+
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading {
+    mso-style-priority: 39;
+    mso-style-qformat: yes;
+    mso-style-parent: "Heading 1";
+    mso-style-next: Normal;
+    margin: 0pt;
+    text-align: center;
+    mso-pagination: widow-orphan lines-together;
+    page-break-after: avoid;
+    font-size: 16.0pt;
+}
+
+p.TableHeader, li.TableHeader, div.TableHeader {
+    mso-style-name: "Table Header";
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    margin: 0pt;
+    mso-pagination: widow-orphan;
+    font-weight: bold;
+}
+
+p.TableCell, li.TableCell, div.TableCell {
+    mso-style-name: "Table Cell";
+    mso-style-unhide: no;
+    mso-style-qformat: yes;
+    margin: 0pt;
+    mso-pagination: widow-orphan;
+}
+
+ol {
+    margin: 0pt;
+}
+
+ul {
+    margin: 0pt;
+}
+
+li {
+    margin: 0pt;
+}
 
 /* Table of... List Definitions */
-@list l0
-{mso-list-id:1764108000;
-    mso-list-template-ids:1094757160;}
-@list l0:level1
-{mso-level-style-link:"Heading 1";
-    mso-level-text:%1;
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:.3in;
-    text-indent:-.3in;}
-@list l0:level2
-{mso-level-style-link:"Heading 2";
-    mso-level-text:"%1\.%2";
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:.4in;
-    text-indent:-.4in;}
-@list l0:level3
-{mso-level-style-link:"Heading 3";
-    mso-level-text:"%1\.%2\.%3";
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:.5in;
-    text-indent:-.5in;}
-@list l0:level4
-{mso-level-style-link:"Heading 4";
-    mso-level-text:"%1\.%2\.%3\.%4";
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:.6in;
-    text-indent:-.6in;}
-@list l0:level5
-{mso-level-style-link:"Heading 5";
-    mso-level-text:"%1\.%2\.%3\.%4\.%5";
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:.7in;
-    text-indent:-.7in;}
-@list l0:level6
-{mso-level-style-link:"Heading 6";
-    mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:.8in;
-    text-indent:-.8in;}
-@list l0:level7
-{mso-level-style-link:"Heading 7";
-    mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:.9in;
-    text-indent:-.9in;}
-@list l0:level8
-{mso-level-style-link:"Heading 8";
-    mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:1.0in;
-    text-indent:-1.0in;}
-@list l0:level9
-{mso-level-style-link:"Heading 9";
-    mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
-    mso-level-tab-stop:none;
-    mso-level-number-position:left;
-    margin-left:1.1in;
-    text-indent:-1.1in;}
+@list l0 {
+    mso-list-id: 1764108000;
+    mso-list-template-ids: 1094757160;
+}
+@list l0:level1 {
+    mso-level-style-link: "Heading 1";
+    mso-level-text:% 1;
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: .3in;
+    text-indent: -.3in;
+}
+@list l0:level2 {
+    mso-level-style-link: "Heading 2";
+    mso-level-text: "%1\.%2";
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: .4in;
+    text-indent: -.4in;
+}
+@list l0:level3 {
+    mso-level-style-link: "Heading 3";
+    mso-level-text: "%1\.%2\.%3";
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: .5in;
+    text-indent: -.5in;
+}
+@list l0:level4 {
+    mso-level-style-link: "Heading 4";
+    mso-level-text: "%1\.%2\.%3\.%4";
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: .6in;
+    text-indent: -.6in;
+}
+@list l0:level5 {
+    mso-level-style-link: "Heading 5";
+    mso-level-text: "%1\.%2\.%3\.%4\.%5";
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: .7in;
+    text-indent: -.7in;
+}
+@list l0:level6 {
+    mso-level-style-link: "Heading 6";
+    mso-level-text: "%1\.%2\.%3\.%4\.%5\.%6";
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: .8in;
+    text-indent: -.8in;
+}
+@list l0:level7 {
+    mso-level-style-link: "Heading 7";
+    mso-level-text: "%1\.%2\.%3\.%4\.%5\.%6\.%7";
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: .9in;
+    text-indent: -.9in;
+}
+@list l0:level8 {
+    mso-level-style-link: "Heading 8";
+    mso-level-text: "%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: 1.0in;
+    text-indent: -1.0in;
+}
+@list l0:level9 {
+    mso-level-style-link: "Heading 9";
+    mso-level-text: "%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+    mso-level-tab-stop: none;
+    mso-level-number-position: left;
+    margin-left: 1.1in;
+    text-indent: -1.1in;
+}
 
 /********************************************************************************************************
     3.2 WORD_PAGE_DEFINITIONS_STYLE_SHEET
@@ -423,108 +496,110 @@ li
   mso-paper-source:0;}
 */
 /* Header Import Bug Workaround Page Definition */
-@page
-{mso-footnote-separator: fs;
+@page {
+    mso-footnote-separator: fs;
     mso-footnote-continuation-separator: fcs;
     mso-endnote-separator: es;
-    mso-endnote-continuation-separator: ecs;}
-@page WordSectionPortrait
-{size:8.5in 11.0in;
-    margin:1.0in 1.0in 1.0in 1.0in;
-    mso-header-margin:.5in;
-    mso-footer-margin:.5in;
-    mso-title-page:yes;
+    mso-endnote-continuation-separator: ecs;
+}
+
+@page WordSectionPortrait {
+    size: 8.5in 11.0in;
+    margin: 1.0in 1.0in 1.0in 1.0in;
+    mso-header-margin: .5in;
+    mso-footer-margin: .5in;
+    mso-title-page: yes;
     mso-header: pageHeader;
     mso-footer: pageFooter;
     mso-first-header: titlepageHeader;
     mso-first-footer: titlepageFooter;
-    mso-paper-source:0;}
-div.WordSectionPortrait
-{page:WordSectionPortrait;}
-@page WordSectionLandscape
-{size:11.0in 8.5in;
-    mso-page-orientation:landscape;
-    margin:1.0in 0.5in 1.0in 1.0in;
-    mso-header-margin:.5in;
-    mso-footer-margin:.5in;
-    mso-title-page:yes;
+    mso-paper-source: 0;
+}
+
+div.WordSectionPortrait {
+    page: WordSectionPortrait;
+}
+
+@page WordSectionLandscape {
+    size: 11.0in 8.5in;
+    mso-page-orientation: landscape;
+    margin: 1.0in 0.5in 1.0in 1.0in;
+    mso-header-margin: .5in;
+    mso-footer-margin: .5in;
+    mso-title-page: yes;
     mso-header: h1;
     mso-footer: f1;
     mso-first-header: fh1;
     mso-first-footer: ff1;
-    mso-paper-source:0;}
-div.WordSectionLandscape
-{page:WordSectionLandscape;}
+    mso-paper-source: 0;
+}
+
+div.WordSectionLandscape {
+    page: WordSectionLandscape;
+}
+
 /* List Definitions */
 
 
 /********************************************************************************************************
     3.3 WORD_TABLE_STYLE_SHEET
 ********************************************************************************************************/
-table
-{margin-top:2pt;
+table {
+    margin-top: 2pt;
     border-collapse: collapse;
-    table-layout: fixed;}
-th, td
-{padding-left: 2pt;
+    table-layout: fixed;
+}
+
+th, td {
+    padding-left: 2pt;
     padding-right: 2pt;
-    text-align:left;
-    overflow-wrap:break-word; /*normal | anywhere | break-word | initial | inherit */
-    white-space:normal !important;
-    font-size:${tableCellFontSize}}
-th
-{background:$tableHeaderBackgroundColor;}
-table.MsoNormalTable
-{mso-style-name:"Table Normal";
-    mso-tstyle-rowband-size:0;
-    mso-tstyle-colband-size:0;
-    mso-style-noshow:yes;
-    mso-style-priority:99;
-    mso-style-parent:"";
-    border-collapse:collapse;
-    mso-padding-alt:0in 5.4pt 0in 5.4pt;
-    mso-para-margin:0in;
-    mso-pagination:widow-orphan;
-    font-size:${tableCellFontSize};
-    font-family:"${primaryFont}",sans-serif;}
-table.MsoTableGrid
-{mso-style-name:"Table Grid";
-    mso-tstyle-rowband-size:0;
-    mso-tstyle-colband-size:0;
-    mso-style-priority:39;
-    mso-style-unhide:no;
-    border:solid $tableBorderColor 1.0pt;
-    border-collapse:collapse;
-    mso-border-alt:solid $tableBorderColor .5pt;
-    mso-padding-alt:0in 5.4pt 0in 5.4pt;
-    mso-border-insideh:.5pt solid $tableBorderColor;
-    mso-border-insidev:.5pt solid $tableBorderColor;
-    mso-para-margin:0in;
-    mso-pagination:widow-orphan;
-    font-size:${tableCellFontSize};
-    mso-bidi-font-size:12.0pt;
-    font-family:"${primaryFont}",sans-serif;}
-table.TableGridwithHeader
-{table-layout:fixed;
-    mso-table-layout-alt:fixed;
-    border-collapse:collapse;
-    border:none;
-    mso-style-name:"Table Grid with Header";
-    mso-tstyle-rowband-size:0;
-    mso-tstyle-colband-size:0;
-    mso-style-priority:99;
-    mso-style-unhide:no;
-    mso-style-parent:"Table Grid";
-    border:solid $tableBorderColor 1.0pt;
-    mso-border-alt:solid $tableBorderColor .5pt;
-    mso-padding-alt:0in 5.4pt 0in 5.4pt;
-    mso-border-insideh:.5pt solid $tableBorderColor;
-    mso-border-insidev:.5pt solid $tableBorderColor;
-    mso-para-margin:0in;
-    mso-pagination:widow-orphan;
-    font-size:${tableCellFontSize};
-    font-family:"${primaryFont}",sans-serif;}
-th.TableHeader
-{border:solid $tableBorderColor .5pt;}
-td.TableCell
-{border:solid $tableBorderColor .5pt;}
+    text-align: left;
+    overflow-wrap: break-word; /*normal | anywhere | break-word | initial | inherit */
+    white-space: normal !important;
+}
+
+
+
+table.MsoNormalTable {
+    mso-style-name: "Table Normal";
+    mso-tstyle-rowband-size: 0;
+    mso-tstyle-colband-size: 0;
+    mso-style-noshow: yes;
+    mso-style-priority: 99;
+    mso-style-parent: "";
+    border-collapse: collapse;
+    mso-padding-alt: 0in 5.4pt 0in 5.4pt;
+    mso-para-margin: 0in;
+    mso-pagination: widow-orphan;
+}
+
+table.MsoTableGrid {
+    mso-style-name: "Table Grid";
+    mso-tstyle-rowband-size: 0;
+    mso-tstyle-colband-size: 0;
+    mso-style-priority: 39;
+    mso-style-unhide: no;
+    border-collapse: collapse;
+    mso-padding-alt: 0in 5.4pt 0in 5.4pt;
+    mso-para-margin: 0in;
+    mso-pagination: widow-orphan;
+    mso-bidi-font-size: 12.0pt;
+}
+
+table.TableGridwithHeader {
+    table-layout: fixed;
+    mso-table-layout-alt: fixed;
+    border-collapse: collapse;
+    border: none;
+    mso-style-name: "Table Grid with Header";
+    mso-tstyle-rowband-size: 0;
+    mso-tstyle-colband-size: 0;
+    mso-style-priority: 99;
+    mso-style-unhide: no;
+    mso-style-parent: "Table Grid";
+    mso-padding-alt: 0in 5.4pt 0in 5.4pt;
+    mso-para-margin: 0in;
+    mso-pagination: widow-orphan;
+
+}
+

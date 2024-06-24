@@ -3003,10 +3003,10 @@ p.QuoteByline, li.QuoteByline, div.QuoteByline
         line-height:115%;}
     /* Page Definitions */
     @page
-    {mso-footnote-separator:url("https://cryoport.github.io/jama-reports-public/Training Exercise Template.fld/header.htm") fs;
-        mso-footnote-continuation-separator:url("https://cryoport.github.io/jama-reports-public/Training Exercise Template.fld/header.htm") fcs;
-        mso-endnote-separator:url("https://cryoport.github.io/jama-reports-public/Training Exercise Template.fld/header.htm") es;
-        mso-endnote-continuation-separator:url("https://cryoport.github.io/jama-reports-public/Training Exercise Template.fld/header.htm") ecs;}
+    {mso-footnote-separator:url("https://cryoport.github.io/jama-reports-public/TrainingExerciseTemplate.fld/header.htm") fs;
+        mso-footnote-continuation-separator:url("https://cryoport.github.io/jama-reports-public/TrainingExercise Template.fld/header.htm") fcs;
+        mso-endnote-separator:url("https://cryoport.github.io/jama-reports-public/TrainingExerciseTemplate.fld/header.htm") es;
+        mso-endnote-continuation-separator:url("https://cryoport.github.io/jama-reports-public/TrainingExerciseTemplate.fld/header.htm") ecs;}
         @page WordSection1
         {size:8.5in 11.0in;
         margin:1.6in 1.0in 1.2in 1.0in;
@@ -3014,7 +3014,7 @@ p.QuoteByline, li.QuoteByline, div.QuoteByline
         mso-footer-margin:.4in;
         mso-page-numbers:0;
         mso-title-page:yes;
-        mso-first-footer:url("https://cryoport.github.io/jama-reports-public/Training Exercise Template.fld/header.htm") ff1;
+        mso-first-footer:url("https://cryoport.github.io/jama-reports-public/TrainingExerciseTemplate.fld/header.htm") ff1;
         mso-paper-source:0;}
     div.WordSection1
     {page:WordSection1;}

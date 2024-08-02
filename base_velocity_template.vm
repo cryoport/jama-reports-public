@@ -3815,7 +3815,7 @@ $string
   9.35pt;mso-element-wrap:around;mso-element-anchor-vertical:page;mso-element-anchor-horizontal:
   column;mso-element-left:right;mso-element-top:216.05pt;mso-height-rule:exactly'><span
   style='font-size:28.0pt;mso-bidi-font-family:Calibri;color:#4F81BD'>
-    < Report Title >
+    $myReportTitle
   </span></p>
   </td>
  </tr>
